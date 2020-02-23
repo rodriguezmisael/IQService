@@ -10,9 +10,7 @@ namespace IQService.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual CustomerType CustomerType { get; set; }
         public bool IsActive { get; set; }
-        public virtual CustomerStatus CustomerStatus { get; set; }
         public string PhysicalAddressLine1 { get; set; }
         public string PhysicalAddressLine2 { get; set; }
         public string PhysicalZipcode { get; set; }
@@ -23,6 +21,12 @@ namespace IQService.Models
         public string Phone { get; set; }
         public string MobilePhone { get; set; }
         public string Fax { get; set; }
+
+        public virtual CustomerType CustomerType { get; set; }
+        public virtual CustomerStatus CustomerStatus { get; set; }
+
+        public virtual ICollection<CustomerService> CustomerServices { get; set; }
+
 
     }
 
