@@ -10,6 +10,6 @@ namespace IQService.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual IList<Customer> Customers { get; set; }
+        public virtual ICollection<Customer> Customers { get; set; }
     }
 }

@@ -11,6 +11,6 @@ namespace IQService.Models
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public virtual IList<Customer> Customers { get; set; }
+        public virtual ICollection<Customer> Customers { get; set; }
     }
 }
