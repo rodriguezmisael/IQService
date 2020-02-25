@@ -12,5 +12,8 @@ namespace IQService.Models
 
         public int ServiceId { get; set; }
         public Service Service { get; set; }
+
+        public DateTime ServiceDate { get; set; }
+        public string Description { get; set; }
     }
 }
