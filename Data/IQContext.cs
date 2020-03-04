@@ -1,10 +1,11 @@
 ﻿using IQService.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace IQService.Context
 {
-    public class IQContext :  DbContext
+    public class IQContext :  IdentityDbContext
     {
 
         public IQContext(DbContextOptions<IQContext> options)

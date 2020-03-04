@@ -34,7 +34,7 @@ namespace IQService
                     .AddDbContext<IQContext>(options =>
                        options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentityCore<ApplicationUser, IdentityRole>() //Add Identity by defining types of Users and Roles.
+            services.AddIdentity<ApplicationUser, IdentityRole>() //Add Identity by defining types of Users and Roles.
                 .AddEntityFrameworkStores<IQContext>() //Specify the Entity Framework Data store
                 .AddDefaultTokenProviders(); //Add this for generating tokens for reseting password etc.
 
