@@ -1,5 +1,4 @@
 using System;
-using FluentValidation.AspNetCore;
 using IQService.Context;
 using IQService.Models;
 using Microsoft.AspNetCore.Builder;
@@ -23,11 +22,7 @@ namespace IQService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(setup =>
-            {
-
-            }).AddFluentValidation();
-
+        
   
             //Configure the context class and use Postgres provider with connection string got from appsettings.json file.
             services.AddEntityFrameworkNpgsql()     //Add PostgreSQL provider
