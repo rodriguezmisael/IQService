@@ -24,6 +24,7 @@ namespace IQService.Models
 
         public virtual CustomerType CustomerType { get; set; }
         public virtual CustomerStatus CustomerStatus { get; set; }
+        public virtual CustomerPerson CustomerPerson { get; set; }
 
         public virtual ICollection<CustomerService> CustomerServices { get; set; }
         public virtual ICollection<ServiceDate> ServiceDates { get; set; }

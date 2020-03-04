@@ -8,5 +8,7 @@ namespace IQService.Models
         public DateTime DateTo { get; set; }
         public DateTime SubmitDate { get; set; }
 
+
+
     }
 }
